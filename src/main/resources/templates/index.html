@@ -5,6 +5,43 @@
   <title>Calculator</title>
 </head>
 <body>
-Hello world
+<div>Calculator</div>
+<div th:text="${symbol}"></div>
+<div>
+  <div><a th:href="@{/add(s=${1})}">
+    <button type="button"> 1 </button></a>
+    <a th:href="@{/add(s=${2})}">
+    <button type="button"> 2 </button></a>
+    <a th:href="@{/add(s=${3})}">
+    <button type="button"> 3 </button></a>
+    <a th:href="@{/add(s=${'+'})}">
+      <button type="button"> + </button></a>
+  </div>
+  <div><a th:href="@{/add(s=${4})}">
+    <button type="button"> 4 </button></a>
+    <a th:href="@{/add(s=${5})}">
+      <button type="button"> 5 </button></a>
+    <a th:href="@{/add(s=${6})}">
+      <button type="button"> 6 </button></a>
+    <a th:href="@{/add(s=${'-'})}">
+      <button type="button"> - </button></a>
+  </div>
+  <div><a th:href="@{/add(s=${7})}">
+    <button type="button"> 7 </button></a>
+    <a th:href="@{/add(s=${8})}">
+      <button type="button"> 8 </button></a>
+    <a th:href="@{/add(s=${9})}">
+      <button type="button"> 9 </button></a>
+    <a th:href="@{/add(s=${'*'})}">
+      <button type="button"> * </button></a>
+  </div>
+  <div><a th:href="@{/add(s=${'/'})}">
+    <button type="button"> / </button></a>
+    <a th:href="@{/add(s=${0})}">
+      <button type="button"> 0 </button></a>
+    <a th:href="@{/add(s=${'='})}">
+      <button type="button"> = </button></a>
+  </div>
+</div>
 </body>
 </html>
